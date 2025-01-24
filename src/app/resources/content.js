@@ -1,19 +1,20 @@
 import { InlineCode } from "@/once-ui/components";
+import { display } from "./config";
 
 const person = {
-    firstName: 'Selene',
-    lastName:  'Yu',
+    firstName: 'Abhinav',
+    lastName:  'Singh',
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
-    role:      'Design Engineer',
+    role:      'Developer',
     avatar:    '/images/avatar.jpg',
-    location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-    languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
+    location:  'Asia/India',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+    languages: ['English', 'Hindi']  // optional: Leave the array empty if you don't want to display languages
 }
 
 const newsletter = {
-    display: true,
+    display: false,
     title: <>Subscribe to {person.firstName}'s Newsletter</>,
     description: <>I occasionally write about design, technology, and share thoughts on the intersection of creativity and engineering.</>
 }
@@ -24,12 +25,12 @@ const social = [
     {
         name: 'GitHub',
         icon: 'github',
-        link: 'https://github.com/once-ui-system/nextjs-starter',
+        link: 'httphttps://github.com/aviiix96',
     },
     {
         name: 'LinkedIn',
         icon: 'linkedin',
-        link: 'https://www.linkedin.com/company/once-ui/',
+        link: 'https://www.linkedin.com/in/abhinav-singh-522ab7281/',
     },
     {
         name: 'X',
@@ -39,7 +40,7 @@ const social = [
     {
         name: 'Email',
         icon: 'email',
-        link: 'mailto:example@gmail.com',
+        link: 'mailto:abhinavsci131@gmail.com',
     },
 ]
 
@@ -47,8 +48,8 @@ const home = {
     label: 'Home',
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
-    headline: <>Design engineer and builder</>,
-    subline: <>I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive<br/> user experiences. After hours, I build my own projects.</>
+    headline: <>Developer and Innovator</>,
+    subline: <>Abhinav Singh is a second-year Computer Science student at SRM IST NCR Campus with a growing passion for AI and Machine Learning. Proficient in Java, Python, and web development, he combines technical skills with a problem-solving approach to tackle challenges and build innovative solutions.</>
 }
 
 const about = {
@@ -69,39 +70,36 @@ const about = {
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>Selene is a Jakarta-based design engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology.</>
+        description: <>Abhinav Singh is a second-year Computer Science student at SRM IST NCR Campus with a growing passion for AI and Machine Learning. Proficient in Java, Python, and web development, he combines technical skills with a problem-solving approach to tackle challenges and build innovative solutions.</>
     },
     work: {
         display: true, // set to false to hide this section
         title: 'Work Experience',
         experiences: [
             {
-                company: 'FLY',
-                timeframe: '2022 - Present',
-                role: 'Senior Design Engineer',
+                company: 'Apni Maati Vastram',
+                timeframe: '2023 - Present',
+                role: 'Web Development Intern and Meta marketing',
                 achievements: [
-                    <>Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.</>,
-                    <>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.</>
+                    <>Built and maintained an e-commerce website, enhancing user experience and driving a 35% increase in online sales.</>,
+                    <>Developed targeted marketing campaigns on social media platforms, leading to a 20% boost in customer engagement and brand visibility.</>
                 ],
                 images: [ // optional: leave the array empty if you don't want to display images
                     {
-                        src: '/images/projects/project-01/cover-01.jpg',
-                        alt: 'Once UI Project',
+                        src: '/images/projects/project-01/apnimaati.jpg',
+                        alt: 'My Project',
                         width: 16,
+                        height: 9
+                    },
+                    {
+                        src: '/images/projects/project-01/apu.png',
+                        alt: 'My Project',
+                        width: 9,
                         height: 9
                     }
                 ]
             },
-            {
-                company: 'Creativ3',
-                timeframe: '2018 - 2022',
-                role: 'Lead Designer',
-                achievements: [
-                    <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
-                    <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
-                ],
-                images: [ ]
-            }
+            
         ]
     },
     studies: {
@@ -109,13 +107,10 @@ const about = {
         title: 'Studies',
         institutions: [
             {
-                name: 'University of Jakarta',
-                description: <>Studied software engineering.</>,
+                name: 'SRM Institute of Science and Technology NCR Campus',
+                description: <>Studies Computer Science Engineering.</>,
             },
-            {
-                name: 'Build the Future',
-                description: <>Studied online marketing and personal branding.</>,
-            }
+            
         ]
     },
     technical: {
@@ -123,34 +118,54 @@ const about = {
         title: 'Technical skills',
         skills: [
             {
-                title: 'Figma',
-                description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+                title: 'Java',
+                description: <>Proficient in Java programming with expertise in OOP principles, data structures, algorithms, and developing efficient, scalable, and robust applications.</>,
                 // optional: leave the array empty if you don't want to display images
                 images: [
                     {
-                        src: '/images/projects/project-01/cover-02.jpg',
+                        src: '/images/projects/skills/java.png',
                         alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                    {
-                        src: '/images/projects/project-01/cover-03.jpg',
-                        alt: 'Project image',
-                        width: 16,
+                        width: 9,
                         height: 9
                     },
                 ]
             },
             {
-                title: 'Next.js',
-                description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+                title: 'Unix and Linux',
+                description: <>Proficient in Java development on Unix/Linux environments, with expertise in shell scripting, process management, file handling, and system-level integration to build efficient and scalable applications</>,
                 // optional: leave the array empty if you don't want to display images
                 images: [
                     {
-                        src: '/images/projects/project-01/cover-04.jpg',
+                        src: '/images/projects/skills/Linux.jpeg',
                         alt: 'Project image',
                         width: 16,
-                        height: 9
+                        height: 14
+                    },
+                ]
+            },
+            {
+                title: 'Web Development',
+                description: <>Skilled in web development, specializing in building efficient, scalable, and secure server-side applications with expertise in modern frameworks, RESTful APIs, real-time communication, and seamless database integration.</>,
+                // optional: leave the array empty if you don't want to display images
+                images: [
+                    {
+                        src: '/images/projects/skills/WEBdev.jpeg',
+                        alt: 'Project image',
+                        width: 16,
+                        height: 10
+                    },
+                ]
+            },
+            {
+                title: 'DBMS',
+                description: <>Proficient in Java with expertise in database management, designing efficient schemas, and integrating relational databases like MySQL, PostgreSQL, and Oracle using JDBC and Hibernate for seamless data operations.</>,
+                // optional: leave the array empty if you don't want to display images
+                images: [
+                    {
+                        src: '/images/projects/skills/DBMS.jpg',
+                        alt: 'Project image',
+                        width: 16,
+                        height: 11
                     },
                 ]
             }
@@ -159,6 +174,7 @@ const about = {
 }
 
 const blog = {
+    display: false,
     label: 'Blog',
     title: 'Writing about design and tech...',
     description: `Read what ${person.name} has been up to recently`
