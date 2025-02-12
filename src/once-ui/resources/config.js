@@ -27,6 +27,21 @@ const og = {
   description: "portfolio.",
   type: "website",
 };
+// default schema data
+const schema = {
+  logo: "",
+  type: "Organization",
+  name: "One UI",
+  description: "Once UI is an open-source design system and component library for Next.js.",
+  email: "",
+};
+
+// social links
+const social = {
+  twitter: "https://www.twitter.com/",
+  linkedin: "https://www.linkedin.com/in/abhinav-singh-522ab7281/",
+  discord: "https://discord.com/",
+};
 
 
 
