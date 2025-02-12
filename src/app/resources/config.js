@@ -1,4 +1,4 @@
-const baseURL = 'https://www.aviiix.me'
+const baseURL = 'aviiix.me'
 
 const routes = {
     '/':        true,
